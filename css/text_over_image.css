@@ -11,6 +11,7 @@
   overflow-x: hidden;
   grid-template-rows: 100vh 100vh 100vh 100vh;
   grid-template-columns: 100%;
+  background: #ECEBEB;
   grid-gap: 0;
   width: 100%;
   height: 100%;
@@ -113,22 +114,37 @@ nav.stroke ul li a:hover:after {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 45% 10% 45%;
-  grid-template-rows: 5% 95%;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 15% 5% 80%;
   grid-area: AboutUs;
   grid-template-areas:
-  "About_us About_us About_us"
-  "Tactica_Logo Filler2 Filler3"
-}
-.About_Us img{
-  object-fit: scale-down;
-  width: 100%;
-  max-height: 100%;
-  grid-area: About_us;
+  "Filler Filler Filler"
+  "Filler2 About_Us Filler5"
+  "Filler3 Information Filler4"
 }
 .About_Us h1 {
   text-align: center;
-  grid-area: About_us;
+  font-size: 2vw;
+  grid-area: About_Us;
+  color: black;
+  font-family: 'Lato';
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
+h1:before,
+h1:after {
+  opacity: .7;
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+h1:after {
+    margin: 0 0 0 20px;
+}
 
